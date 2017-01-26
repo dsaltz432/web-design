@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 8 - JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<h1>JavaScript Examples</h1>
+
+	<div class="box">
+
+		<h2>Example 1: Mouseover</h2>
+		<p>This is an example of inline JavaScript using "event attributes" like <strong>onmouseover</strong> and <strong>onmouseout</strong>.</p>
+		<figure>
+			<img src="images/cat1.jpg" alt ="cat" onmouseover="this.src='images/cat2.jpg';" onmouseout="this.src='images/cat1.jpg';">
+
+			<figcaption>Hover your mouse over this image</figcaption>
+		</figure>
+
+	</div><!--.box-->
+
+	<div class="box">
+
+		<h2>Example 2: JavaScript getElementById()</h2>
+		<p>This is an example of JavaScript grabbing an element in the DOM and altering its properties.</p>
+		<figure>
+			<!-- PART 4: Add an ID to the IMG element and another ID to the BUTTON element-->
+			<img id="imageID" src="images/cat1.jpg" alt="cat">
+			<button id="buttonID" onclick="myFunction()">Click to show/hide the kitty</button>
+
+		</figure>
+
+	</div><!--.box-->
+
+</div><!--.container-->
+
+<script src="js/scripts.js"></script>
+			
+<script>
+function myFunction()
+{
+    // alert("This is an alert.");
+}
+</script>
+
+</body>
+</html>

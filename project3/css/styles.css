@@ -1,0 +1,124 @@
+ body { /* adding readablity */
+	color: #333333; 
+	background-color: #DFEFF0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { /* styles the only h1 element: "Tim Cook" */
+	color: #4B0082;
+}
+
+.container { 	/* controls the width of all content */ 
+	width:90%;
+	max-width: 960px;
+	/*margin-left:40px;*/
+	margin:0 auto;
+}
+
+.left, .right{   /* uses inline-block to create columnar layout */
+	display:inline-block;
+	vertical-align: top;
+	width:45%;
+	padding: 0 15px;
+}
+
+figure { /* adjusting whitespace around pictures */
+	margin: 30px 10px;
+}
+
+table, h2, h3, article { /* helps add proper whitespace between elements */
+	margin: 20px 0 0 0;
+}
+
+/****** Styles that fix citation in the footer ********/
+footer a {
+	text-decoration: none;
+	color: #7D9C9F;
+}
+
+footer a:hover { 
+	color: #AD235E; 
+}
+
+.resize-image {
+	max-width: 95%;
+}
+
+.logo, .banner-text {
+	display: inline-block;
+}
+
+.logo {
+	width: 200px;
+	margin-right: 25px;
+}
+header {
+	margin-bottom: 15px;
+	border-bottom: 1px solid #AD235E;
+}
+
+.banner-text a {
+	text-decoration: none;
+	color: #AD235E;
+}
+
+.subtext {
+	margin-top: -20px;
+	margin-left: 50%;
+}
+
+.person {
+	margin-top:50px;
+}
+
+/* footer styles */
+.copyright {
+	font-size: 11px;
+	margin-top: -10px;
+}
+
+.end-footer {
+	margin-left:0;
+}
+
+.end-footer {
+	border-top: 1px solid #AD235E;
+	width:100%;
+}
+
+
+/*	*************************************
+	Media Queries to make the website mobile friendly
+	************************************* */
+
+@media(max-width:720px)
+{
+	.left, .right
+	{
+		display: block;
+		width: auto;
+	}
+}
+
+@media(max-width:540px)
+{
+	.left
+	{
+		background-image: none;
+		padding: 0;
+	}
+
+	.menu li { display: block; } 
+}
+
+@media(max-width:390px)
+{
+	.right 
+	{
+		float: none;
+	    margin-left: 0;
+	    margin-top: 25px;
+	}
+
+	/*.menu li { display: block; } */
+}

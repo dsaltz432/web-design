@@ -1,0 +1,32 @@
+h2, p{border: 2px solid green;}
+
+
+#block{ display:inline-block;}
+
+div { /* all elements in the body get borders on 3 sides */
+	border-top:2px solid blue;
+	border-right:2px solid blue;
+	border-left:2px solid blue;
+
+}
+
+/*  only the last div gets a bottom border  */ 
+div:last-of-type { border-bottom: 2px solid blue; }
+
+
+span { /* all elements in the body get borders on 4 sides */
+	border-top:2px solid red;
+	border-right:2px solid red;
+	border-left:2px solid red;
+	border-bottom:2px solid red;
+
+	/*   span elements can't have a margin. Inline elements 
+		don't support vertical margins */
+	/* Must change display to inline-block to assign a margin */
+	display: inline-block;
+	margin-top: 10px;
+}
+
+body{
+	color:red;
+}

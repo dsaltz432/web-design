@@ -1,0 +1,39 @@
+.menu ul {
+	/* gets rid of default settings for ul */
+	margin: 0;
+	padding-left: 0;
+	border-collapse: collapse; /* gets rid of double borders */
+	list-style-type: none; /* typical - no bullets */
+}
+
+.menu a { 
+	color: #333333;
+    display: block; /* allows for padding to be added */
+    padding: 5px 20px;
+    text-decoration: none; /* gets rid of underlines */
+}
+
+.menu a:hover{ color: #0081C2;; }
+
+.menu a:before { 
+	content: "\25B6 \A0"; /* down arrow */
+	font-size: 9px; 
+	color: #333333;
+	position: relative;
+	bottom: 2px; 
+} 
+.menu a:hover:before { color: #0081C2; } /* colors the carrot when hovering */
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 960px
+}
+
+.menu { 
+	position: fixed; /* holds the nav menu on the screen even when scrolling */
+	width: 150px;
+
+}
+
+.content { margin-left: 170px; }

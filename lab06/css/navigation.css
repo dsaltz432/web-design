@@ -1,0 +1,25 @@
+.menu ul {
+	/* gets rid of default settings for ul */
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+	border-collapse: collapse; /* gets rid of double borders */
+}
+
+.menu li {
+	border: 1px solid black;
+	display: table-cell; /* need to collapse border on entire UL to not get double borders */
+}
+
+.menu a { 
+/* changs anchor to block, awawy from it's default setting of inline
+This gives it more area to click on by allowing box model padding */
+	color: black;
+    display: block;
+    padding: 5px 20px;
+}
+
+.menu a:hover{
+	color: white;
+	background-color: #333333;
+}

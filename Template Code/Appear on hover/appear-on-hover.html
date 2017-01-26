@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Appear on Hover demo</title>
+		<style>
+			.visible { 
+				color: white;
+				background-color: #a33333;
+				padding: 10px 10px;
+				display: inline-block;
+			}
+			.hidden-box { background-color: #aaa000;}
+
+			.visible { 
+				position: relative; /* Create "a world" hidden box */
+			}
+			.hidden-box {
+				display: none;  /* make it hiddne by default */
+				position: absolute; /* acts absolute to the relative container div */
+				z-index: 1000; /* important - make sure always on top */
+			    top: 100%; /* Puts hidden box right up to the container */
+			    left: 0; /* Makes hidden box align left with container */
+			    right: 0; 
+			}
+			.visible:hover .hidden-box { 
+				display: block; /* magic! */
+			}
+
+			.hidden-box p { /* only affects the p inside the hidden box */
+				margin: 5px 5px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<h1>Appear on hover</h1>
+
+		<div class="visible">
+			<p>Box that is visible (hover here)</p>
+			<div class="hidden-box">
+				<p> Magic! </p>
+			</div>
+		</div>
+
+		<p>
+			Another visit rockets! The favoring independence worships a generator. A composite charters the missile around the walking rescue. My overall burden sickens. The science worries the backed approval.
+		</p>
+
+	</body>
+</html>
